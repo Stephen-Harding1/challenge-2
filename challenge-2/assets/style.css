@@ -1,0 +1,130 @@
+:root{
+    --primary-color: #9ddfdb;
+    --secondary-color:#56585a;
+}
+body, html{
+    height:100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    padding: 20px 35px;
+    background-color: var(--secondary-color);
+    display: flex;
+    
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    color: var(--primary-color);
+    z-index: 9999;
+  }
+  
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    margin: 40px;
+  }
+  
+  header nav ul li a:hover {
+    text-shadow: 3px 3px #000000;
+  }
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/hero.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: large;
+    font-style: oblique;
+    transform: translate(-50%, -50%);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 10px;
+    border: 2px outset rgba(28,110,164,0.41);
+    border-radius: 12px;
+    opacity: 0.9;
+
+  }
+
+.content{
+    background-color: gray;
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content-title h2{
+    color:var(--primary-color);
+    font-size: 30px;
+    align-self:30%;
+    width:100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.content-content{
+    color:var(--primary-color);
+    width:1000px;    
+    border-left: 5px solid;
+    text-align: right;
+    padding-left: 50px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.9fr 1.1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: stretch;
+  gap: 1px 1px;
+ }
+.grid-item{
+    padding: 15px 0;
+  border: 2px solid var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.Project-1 { grid-area: Project-1; }
+
+.Project-2 { grid-area: Project-2; }
+
+.Project-3 { grid-area: Project-3; }
+
+.Project-4 { grid-area: Project-4; }
+
+.Project-5 { grid-area: Project-5; }
